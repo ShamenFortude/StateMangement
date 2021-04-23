@@ -73,6 +73,7 @@ class MainDialog extends Dialog{
                 }
                 
             }
+            
             case 'product'://az search
                 console.log(recognizerResult);
                 const entity = recognizerResult.entities['product_name'];
@@ -92,7 +93,7 @@ class MainDialog extends Dialog{
                 }catch (error){
                     console.log(error);
                 }
-                
+                break;
                 
             default:
 
